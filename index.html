@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website of Gwendolyn Suarilla, beginner web developer, photographer, and videographer.">
+  <title>Gwendolyn Suarilla | Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="fixed left-0 right-0 top-0 z-50 px-4 py-4 md:px-8">
+    <nav class="glass mx-auto flex max-w-7xl items-center justify-between rounded-full px-5 py-3" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-3 font-semibold" aria-label="Gwendolyn Suarilla home">
+        <span class="brand-mark text-3xl leading-none">GS</span>
+        <span class="hidden sm:inline">Gwendolyn Suarilla</span>
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm font-medium md:flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="rounded-full border px-4 py-2 text-sm font-semibold" style="border-color: var(--line);" type="button" aria-label="Switch to dark mode">Dark</button>
+        <button id="menuToggle" class="rounded-full border px-3 py-2 md:hidden" style="border-color: var(--line);" type="button" aria-label="Open menu" aria-expanded="false">
+          <span class="block h-0.5 w-5 bg-current"></span>
+          <span class="mt-1.5 block h-0.5 w-5 bg-current"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-panel glass mx-auto mt-3 max-w-7xl rounded-3xl p-5 md:hidden">
+      <div class="grid gap-4 text-lg font-semibold">
+        <a href="#about" class="mobile-link">About Me</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-plane flex items-center px-5 py-28 md:px-10">
+      <div class="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-end pt-32 md:min-h-[76vh]">
+        <p class="reveal mb-5 max-w-3xl text-xl font-medium uppercase tracking-[0.38em] text-[#f1c27d]">Portfolio of</p>
+        <h1 class="reveal max-w-5xl text-6xl font-black leading-[0.9] tracking-[-0.06em] sm:text-7xl lg:text-9xl">Gwendolyn Suarilla</h1>
+        <div class="mt-8 grid gap-8 md:grid-cols-[1.15fr_0.85fr] md:items-end">
+          <div class="reveal">
+            <p class="max-w-2xl text-2xl font-semibold text-white md:text-3xl">Beginner Web Developer, Photographer, and Videographer</p>
+            <p class="mt-4 max-w-xl text-base leading-8 text-white/80 md:text-lg">I create responsive websites and visual stories with a warm, cinematic style. This portfolio shows my growth in HTML, CSS, JavaScript, photography, and video editing.</p>
+          </div>
+          <div class="reveal flex flex-wrap gap-3 md:justify-end">
+            <a href="#projects" class="rounded-full bg-[#fff3e7] px-6 py-3 font-bold text-[#211b17] hover:-translate-y-1">View Projects</a>
+            <a href="Suarilla_Resume.pdf" id="resumeBtn" type="button" class="rounded-full border border-white/45 px-6 py-3 font-bold text-white hover:-translate-y-1 hover:bg-white/10">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="px-5 py-24 md:px-10">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div class="reveal float-slow">
+          <div class="aspect-[4/5] overflow-hidden rounded-[2rem] border" style="border-color: var(--line); background: linear-gradient(160deg, rgba(157,81,50,.18), transparent);">
+           <img 
+          src="profile.jpg" 
+          alt="Gwendolyn Suarilla profile photo"
+          class="h-full w-full object-cover"
+/>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.28em]" style="color: var(--accent);">About Me</p>
+          <h2 class="text-4xl font-black tracking-[-0.04em] md:text-6xl">A visual storyteller learning to build for the web.</h2>
+          <p class="mt-6 text-lg leading-9" style="color: var(--muted);">My name is Gwendolyn Suarilla. I am a beginner in programming with a creative background in photography and videography. I enjoy capturing real moments, editing meaningful visuals, and turning ideas into clean, responsive websites.</p>
+          <p class="mt-4 text-lg leading-9" style="color: var(--muted);">As a student and self-learner, I am developing strong foundations in HTML, CSS, and JavaScript. My goal is to combine web development with media production so I can create digital experiences that look professional, feel personal, and work well on every device.</p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-3">
+            <div class="border-t pt-4" style="border-color: var(--line);">
+              <p class="text-3xl font-black">3+</p>
+              <p style="color: var(--muted);">Portfolio projects</p>
+            </div>
+            <div class="border-t pt-4" style="border-color: var(--line);">
+              <p class="text-3xl font-black">2</p>
+              <p style="color: var(--muted);">Creative fields</p>
+            </div>
+            <div class="border-t pt-4" style="border-color: var(--line);">
+              <p class="text-3xl font-black">100%</p>
+              <p style="color: var(--muted);">Growth mindset</p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-xl font-bold">Education and Achievements</h3>
+            <ul class="mt-4 space-y-3 leading-8" style="color: var(--muted);">
+              <li>Bachelor of Science in Information Technology</li>
+              <li>Currently building beginner projects using HTML, CSS, and JavaScript.</li>
+              <li>Practicing photography composition, lighting, editing, and storytelling.</li>
+              <li>Creating a digital portfolio as a step toward real-world opportunities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="px-5 py-24 md:px-10" style="background: color-mix(in srgb, var(--accent) 8%, transparent);">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal max-w-3xl">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.28em]" style="color: var(--accent);">Projects</p>
+          <h2 class="text-4xl font-black tracking-[-0.04em] md:text-6xl">Selected work in code, photo, and video.</h2>
+          <p class="mt-5 text-lg leading-8" style="color: var(--muted);">These projects are customized examples that show responsive design, visual direction, and beginner-friendly JavaScript interactivity.</p>
+        </div>
+
+        <div class="mt-14 grid gap-12">
+          <article class="project-row reveal grid gap-6 border-t pt-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center" style="border-color: var(--line);">
+            <div class="project-preview rounded-[2rem]">
+              <svg viewBox="0 0 720 440" class="h-full w-full" role="img" aria-label="LensCraft Studio website preview">
+                <rect width="720" height="440" fill="#211b17"></rect>
+                <rect x="42" y="40" width="636" height="360" rx="28" fill="#fff3e7"></rect>
+                <rect x="82" y="78" width="150" height="14" rx="7" fill="#9d5132"></rect>
+                <circle cx="524" cy="230" r="105" fill="#c78b54"></circle>
+                <circle cx="524" cy="230" r="62" fill="#211b17"></circle>
+                <circle cx="524" cy="230" r="34" fill="#fff3e7"></circle>
+                <path d="M86 146h260M86 190h220M86 248h180" stroke="#211b17" stroke-width="20" stroke-linecap="round"></path>
+                <rect x="86" y="318" width="150" height="44" rx="22" fill="#9d5132"></rect>
+              </svg>
+            </div>
+            <div>
+              <h3 class="mt-3 text-3xl font-black tracking-[-0.03em] md:text-5xl">Videography Portfolio</h3>
+              <p class="mt-5 text-lg leading-8" style="color: var(--muted);">A passionate video editor who turns ideas into engaging visual stories. I specialize in creating clean, dynamic, and impactful videos that capture attention and deliver the message clearly. Whether it’s for content, branding, or storytelling, I focus on quality, creativity, and smooth editing that connects with the audience.</p>
+              <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+              </div>
+              <a href="https://drive.google.com/drive/u/2/folders/1qbZTnee0oBrof3KFyHwjAbN7LwOZeHvo" target="_blank" rel="noopener" class="mt-8 inline-flex rounded-full border px-6 py-3 font-bold hover:-translate-y-1" style="border-color: var(--line);">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-row reveal grid gap-6 border-t pt-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center" style="border-color: var(--line);">
+            <div class="project-preview rounded-[2rem] lg:order-2">
+              <svg viewBox="0 0 720 440" class="h-full w-full" role="img" aria-label="Cinematic video portfolio preview">
+                <rect width="720" height="440" fill="#9d5132"></rect>
+                <rect x="65" y="55" width="590" height="330" rx="30" fill="#15110f"></rect>
+                <path d="M306 170l105 60-105 60z" fill="#f1c27d"></path>
+                <path d="M105 335h510" stroke="#fff3e7" stroke-width="10" stroke-linecap="round" opacity="0.9"></path>
+                <path d="M105 335h260" stroke="#c78b54" stroke-width="10" stroke-linecap="round"></path>
+                <rect x="105" y="92" width="140" height="18" rx="9" fill="#fff3e7" opacity="0.85"></rect>
+                <circle cx="584" cy="101" r="16" fill="#c78b54"></circle>
+              </svg>
+            </div>
+            <div class="lg:order-1">
+              <h3 class="mt-3 text-3xl font-black tracking-[-0.03em] md:text-5xl">Photography Portfolio</h3>
+              <p class="mt-5 text-lg leading-8" style="color: var(--muted);">A passionate photographer who loves capturing real moments and turning them into lasting memories. I focus on natural, clean, and expressive shots that tell a story in every frame. Whether it’s portraits, events, or creative projects, I aim to create photos that feel genuine and meaningful.</p>
+              <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+              </div>
+              <a href="https://drive.google.com/drive/u/1/folders/1bsXS-VkRkCJGpZWemRJ-SyYYKwpAOFWF" target="_blank" rel="noopener" class="mt-8 inline-flex rounded-full border px-6 py-3 font-bold hover:-translate-y-1" style="border-color: var(--line);">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-row reveal grid gap-6 border-t pt-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center" style="border-color: var(--line);">
+            <div class="project-preview rounded-[2rem]">
+              <svg viewBox="0 0 720 440" class="h-full w-full" role="img" aria-label="Beginner task app preview">
+                <rect width="720" height="440" fill="#f1c27d"></rect>
+                <rect x="150" y="46" width="420" height="348" rx="32" fill="#fff3e7"></rect>
+                <rect x="194" y="92" width="198" height="20" rx="10" fill="#211b17"></rect>
+                <rect x="194" y="150" width="332" height="54" rx="18" fill="#c78b54" opacity="0.8"></rect>
+                <rect x="194" y="224" width="332" height="54" rx="18" fill="#9d5132" opacity="0.85"></rect>
+                <rect x="194" y="298" width="220" height="54" rx="18" fill="#211b17" opacity="0.92"></rect>
+                <path d="M222 178l18 17 36-40M222 252l18 17 36-40" stroke="#fff3e7" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div>
+            
+              <h3 class="mt-3 text-3xl font-black tracking-[-0.03em] md:text-5xl">Certificates</h3>
+              
+              <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+          
+              </div>
+              <a href="https://drive.google.com/drive/u/1/folders/1bjgcciI2yGbHQ4axavIuS78WhZSAC0LL" target="_blank" rel="noopener" class="mt-8 inline-flex rounded-full border px-6 py-3 font-bold hover:-translate-y-1" style="border-color: var(--line);">View Certificates</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="px-5 py-24 md:px-10">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div class="reveal">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.28em]" style="color: var(--accent);">Skills</p>
+          <h2 class="text-4xl font-black tracking-[-0.04em] md:text-6xl">Tools I use to build and create.</h2>
+          <p class="mt-5 text-lg leading-8" style="color: var(--muted);">My technical skills are growing through practice, projects, and creative experimentation.</p>
+        </div>
+        <div class="reveal grid gap-7">
+          <div>
+            <div class="mb-2 flex justify-between font-bold"><span>HTML</span><span>85%</span></div>
+            <div class="skill-bar h-3 rounded-full" style="background: var(--line); --level: 85%;"><span class="block h-full rounded-full" style="background: var(--accent);"></span></div>
+          </div>
+          <div>
+            <div class="mb-2 flex justify-between font-bold"><span>CSS and Responsive Design</span><span>78%</span></div>
+            <div class="skill-bar h-3 rounded-full" style="background: var(--line); --level: 78%;"><span class="block h-full rounded-full" style="background: var(--accent);"></span></div>
+          </div>
+          <div>
+            <div class="mb-2 flex justify-between font-bold"><span>JavaScript</span><span>62%</span></div>
+            <div class="skill-bar h-3 rounded-full" style="background: var(--line); --level: 62%;"><span class="block h-full rounded-full" style="background: var(--accent);"></span></div>
+          </div>
+          <div>
+            <div class="mb-2 flex justify-between font-bold"><span>Photography</span><span>88%</span></div>
+            <div class="skill-bar h-3 rounded-full" style="background: var(--line); --level: 88%;"><span class="block h-full rounded-full" style="background: var(--accent);"></span></div>
+          </div>
+          <div>
+            <div class="mb-2 flex justify-between font-bold"><span>Videography and Editing</span><span>82%</span></div>
+            <div class="skill-bar h-3 rounded-full" style="background: var(--line); --level: 82%;"><span class="block h-full rounded-full" style="background: var(--accent);"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-5 py-24 md:px-10" style="background: color-mix(in srgb, var(--accent) 8%, transparent);">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div class="reveal">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.28em]" style="color: var(--accent);">Contact</p>
+          <h2 class="text-4xl font-black tracking-[-0.04em] md:text-6xl">Let's create something thoughtful.</h2>
+          <p class="mt-5 text-lg leading-8" style="color: var(--muted);">Use the form to send a message about web projects, photography sessions, video work, or learning opportunities.</p>
+          <div class="mt-8 flex flex-wrap gap-4 font-bold">
+            <a href="https://github.com/gwenikels" target="_blank" rel="noopener" class="rounded-full border px-5 py-3 hover:-translate-y-1" style="border-color: var(--line);">GitHub</a>
+            <a href="https://www.linkedin.com/in/gwendolyn-suarilla-375635318/" target="_blank" rel="noopener" class="rounded-full border px-5 py-3 hover:-translate-y-1" style="border-color: var(--line);">LinkedIn</a>
+            <a href="https://www.facebook.com/gwenny.rawr" class="rounded-full border px-5 py-3 hover:-translate-y-1" style="border-color: var(--line);">Facebook</a>
+          </div>
+        </div>
+        <form id="contactForm" class="reveal glass rounded-[2rem] p-6 md:p-8" novalidate>
+          <div class="grid gap-5">
+            <label class="grid gap-2 font-semibold">Name
+              <input id="name" name="name" type="text" autocomplete="name" class="rounded-2xl border bg-transparent px-4 py-3" style="border-color: var(--line);" required minlength="2" placeholder="Your name">
+            </label>
+            <label class="grid gap-2 font-semibold">Email
+              <input id="email" name="email" type="email" autocomplete="email" class="rounded-2xl border bg-transparent px-4 py-3" style="border-color: var(--line);" required placeholder="you@example.com">
+            </label>
+            <label class="grid gap-2 font-semibold">Message
+              <textarea id="message" name="message" rows="5" class="rounded-2xl border bg-transparent px-4 py-3" style="border-color: var(--line);" required minlength="10" placeholder="Tell me about your project or opportunity"></textarea>
+            </label>
+            <button type="submit" class="rounded-full px-6 py-4 font-black text-white hover:-translate-y-1" style="background: var(--accent);">Send Message</button>
+            <p id="formStatus" class="min-h-6 font-semibold" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-5 py-8 md:px-10">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 border-t pt-8 text-sm md:flex-row" style="border-color: var(--line); color: var(--muted);">
+     <p>Copyright <span id="year"></span> Gwendolyn Suarilla. All rights reserved.</p> 
+      <a href="#home" cla   ss="font-bold" style="color: var(--text);">Back to top</a>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
